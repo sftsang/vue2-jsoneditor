@@ -51,6 +51,8 @@ export default {
     const container = this.$refs.jsoneditor
     const options = _.extend({
       onChange: this._onChange
+      modes: ['tree','text'],
+      name: 'Config'
     }, this.options)
 
     this.editor = new JSONEditor(container, options)
